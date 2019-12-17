@@ -1,0 +1,6 @@
+{% extends "layout.html" %} {% block content %}
+<h1>For homeys eyes only</h1>
+{% for job in jobs %}
+<h1>{{ job.customer }}</h1>
+<p>{{ job.work_type }} for ${{ job.dollars_charged }}</p>
+{% endfor %} {% endblock %}
